@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(/New-Project/bg-intro-desktop.png);
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  padding: 40px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.container > div {
+  flex: 1;
+  padding: 0 20px;
+}
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+}
+p {
+  font-size: 15px;
+  opacity: 0.8;
+}
+.box {
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+.box-blue {
+  padding: 20px;
+  background-color: hsl(248, 32%, 49%);
+}
+.form-control {
+  position: relative;
+  margin-bottom: 30px;
+}
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: hsl(0, 100%, 74%);
+  margin-bottom: -20px;
+  opacity: 0;
+  color: #bbb;
+}
+.small {
+  color: #bbb;
+}
+.small a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+}
+.box p {
+  margin: 0;
+  text-align: center;
+}
+input {
+  border: 1.3px solid hsl(246, 25%, 77%);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  padding: 15px 25px;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+}
+input:focus {
+  border: 1.3px solid hsl(248, 32%, 49%);
+  outline: none;
+}
+button {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  padding: 15px 25px;
+  display: block;
+  width: 100%;
+  background-color: hsl(154, 59%, 45%);
+  border: 1px solid hsl(154, 59%, 49%);
+  box-shadow: 0 2px hsl ((154, 59%, 45%));
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+button:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
